@@ -1,0 +1,9 @@
+*~
+*.pdf
+*.pyc
+!*.py
+!*.C
+!*.cpp
+!*.txt
+!*.md
+!*.tex

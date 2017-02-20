@@ -1,0 +1,46 @@
+% $Id: title-LHCb-ANA.tex 39841 2013-07-26 10:31:08Z roldeman $
+% ===============================================================================
+% Purpose: LHCb-ANA Note title page template
+% Author: 
+% Created on: 2010-10-05
+% ===============================================================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Header ---------------------------------------------------
+\vspace*{-1.5cm}
+
+\noindent
+\begin{tabular*}{\linewidth}{lc@{\extracolsep{\fill}}r@{\extracolsep{0pt}}}
+\ifthenelse{\boolean{pdflatex}}% Logo format choice
+{\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.14\textwidth]{figs/tuhep-logo.pdf}} & &}%
+{\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.12\textwidth]{logo.png}} & &}
+
+ \\
+ & & template for writing note \\  % ID 
+ & & \today \\ % Date - Can also hardwire e.g.: 23 March 2010
+ & & version 0.1\\
+\hline
+\end{tabular*}
+
+\vspace*{1.5cm}
+
+% Title --------------------------------------------------
+{\bf\boldmath\huge
+\begin{center}
+    template for writing note
+\end{center}
+}
+
+\vspace*{0.7cm}
+
+% Authors -------------------------------------------------
+\begin{center}
+Please add your name here\bigskip\\
+{\it\footnotesize
+}
+\end{center}
+
+\vspace*{2.0cm}
