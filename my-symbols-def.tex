@@ -7,8 +7,13 @@
 \newcommand{\diracgamma}[1]{\ensuremath{\gamma^{#1}}\xspace}   % {1}
 \newcommand{\diracGamma}[1]{\ensuremath{\gamma_{#1}}\xspace}   % {1}
 \newcommand{\diracGammaMatrix}[1]{                             % {0}
-    \ifthenelse{#1=0}{\ensuremath{\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&-1\\0&0&0&-1\end{pmatrix}}}{}
+    \ifthenelse{#1=0}{\ensuremath{\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}}}{}
         \ifthenelse{#1=1}{\ensuremath{\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&-1\end{pmatrix}}}{}
             \ifthenelse{#1=2}{\ensuremath{\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&-1\\0&0&0&-1\end{pmatrix}}}{}
                 \ifthenelse{#1=3}{\ensuremath{\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&0&-1\\0&0&0&-1\end{pmatrix}}}{}
                     }
+
+% 未分类
+\def\C {\ensuremath{\textbf{C}}}
+\def\P {\ensuremath{\textbf{P}}}
+\def\T {\ensuremath{\textbf{T}}}
