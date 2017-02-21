@@ -1,0 +1,85 @@
+\documentclass{article}
+% This is an automatically generated appendix to template.tex. 
+% When included it will show all the symbols defined in lhcb-symbols-def.tex.
+%
+% To regenerate with the latest definitions run the script ./listsymbols
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Header ---------------------------------------------------
+% Authors -------------------------------------------------
+%\begin{center}
+%Please add your name here\bigskip\\
+%{\it\footnotesize
+%}
+%\end{center}
+
+\vspace*{2.0cm}
+% For two column text, add "twocolumn" as an option to the document
+% class. Also uncomment the two "onecolumn" and "twocolumn" lines
+% around the title page below.
+
+% Chinese
+\usepackage{xeCJK}
+\usepackage{cite}
+\usepackage{mciteplus}
+\usepackage{lineno}
+\usepackage{xpinyin}
+
+\renewcommand{\baselinestretch}{1.6}
+%\usepackage{setspace}\linestretch{1.6}
+
+% Variables that controls behaviour
+\usepackage{ifthen} % for conditional statements
+\newboolean{pdflatex}
+\setboolean{pdflatex}{true} % False for eps figures 
+
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
+
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %True for upright particle symbols
+
+%\newboolean{inbibliography}
+%\setboolean{inbibliography}{false} %True once you enter the bibliography
+
+\input{preamble}
+\input{myfonts}
+\input{my-symbols-def}
+\input{mathdefine}
+\usepackage{longtable} % only for template; not usually to be used in PAPERs
+
+
+\begin{document}
+\vspace*{-1.5cm}
+
+\noindent
+\begin{tabular*}{\linewidth}{lc@{\extracolsep{\fill}}r@{\extracolsep{0pt}}}
+\ifthenelse{\boolean{pdflatex}}% Logo format choice
+{\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.14\textwidth]{figs/tuhep-logo}} & &}%
+{\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.12\textwidth]{figs/logo.png}} & &}
+
+ \\
+ & & Symbol definition for writing notes \\  % ID 
+ & & \today \\ % Date - Can also hardwire e.g.: 23 March 2010
+ & & version 0.1\\
+\hline
+\end{tabular*}
+
+\vspace*{1.5cm}
+
+% Title --------------------------------------------------
+{\bf\boldmath\huge
+\begin{center}
+    Symbol definition for writing notes
+\end{center}
+}
+
+\vspace*{0.7cm}
+
+
+\section{Symbols}
+\input{my-symbols-list}
+\end{document}
