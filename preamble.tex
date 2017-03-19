@@ -79,11 +79,12 @@ end#1\endcsname
 
 % Get hyperlinks to captions and in references.
 % These do not work with revtex. Use "hypertext" as class option instead.
-\usepackage{hyperref}    % Hyperlinks in references
+\usepackage[pdfborder=0 0 0]{hyperref}    % Hyperlinks in references
+%\hypersetup{colorlinks=true}
 \usepackage[all]{hypcap} % Internal hyperlinks to floats.
 
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
-\input{mydefine}
+%\input{mydefine}
 
 % Make this the last packages you include before the \begin{document}
 \usepackage{cite} % Allows for ranges in citations
