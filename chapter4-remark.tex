@@ -59,23 +59,23 @@ Dirac matrices
 
 把Klein-Gordon场方程的解展开
 \begin{equation}
-    \begin{array}{ccc}
-        \phi(t, \vec x) &=& \int \VolumeUnit k \omega \left[ a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} + a^*(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right] \\
-        &\equiv& \int d^3\vec k = \left[a(k)f_k(x) + a^*(k)f_k^*(x)\right]
+    \begin{array}{lll}
+        \phi(t, \vec x) &=&\displaystyle \int \VolumeUnit k \omega \left[ a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} + a^*(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right] \\
+        &\equiv& \displaystyle\int d^3\vec k \left[a(k)f_k(x) + a^*(k)f_k^*(x)\right]
     \end{array}
 \end{equation}
 量子化过程即将上式写成算符
 \begin{equation}
-    \begin{array}{ccc}
-        \phi(t, \vec x) &=& \int \VolumeUnit k \omega \left[ a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} + a^\dagger(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right] \\
-        &\equiv& \int d^3\vec k = \left[a(k)f_k(x) + a^\dagger(k)f_k^\dagger(x)\right]
+    \begin{array}{lll}
+        \phi(t, \vec x) &=& \displaystyle\int \VolumeUnit k \omega \left[ a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} + a^\dagger(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right] \\
+        &\equiv& \displaystyle\int d^3\vec k \left[a(k)f_k(x) + a^\dagger(k)f_k^\dagger(x)\right]
     \end{array}
 \end{equation}
 同时，正则动量可以求出
 \begin{equation}
-    \begin{array}{ccc}
-        \pi(t, \vec x) &=& \dot \phi(t, x) = \int \VolumeUnit k \omega \left[ i\omega_k a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} - i\omega_k a^\dagger(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right] \\
-        &\equiv& \int d^3\vec k = \left[a(k)f_k(x) + a^\dagger(k)f_k^\dagger(x)\right]
+    \begin{array}{lll}
+        \pi(t, \vec x) &=& \dot \phi(t, x) = \displaystyle\int \VolumeUnit k \omega \left[ i\omega_k a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} - i\omega_k a^\dagger(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right] \\
+        &\equiv& \displaystyle\int d^3\vec k = \left[a(k)f_k(x) + a^\dagger(k)f_k^\dagger(x)\right]
     \end{array}
     \end{equation}
 
@@ -114,7 +114,7 @@ Dirac matrices
 \end{equation}
 带入$\phi$的表达式可得,
 \begin{equation}
-    \begin{array}{ccc}
+    \begin{array}{lll}
         \UC a_{\vec k} \invUC &=& \eta_C b_{\vec k} \\
         \UC a_{\vec k}^\dagger \invUC &=& \eta_C^* b_{\vec k}^\dagger \\
         \UC b_{\vec k} \invUC &=& \eta_C^* a_{\vec k} \\
@@ -157,7 +157,7 @@ $E_{\vec p}\rightarrow E_{\vec p}, \vec p\rightarrow \vec p, \vec s\rightarrow-\
 \end{equation}
 可以求得产生湮灭算符的变换关系
 \begin{equation}
-    \begin{array}{ccc}
+    \begin{array}{lll}
         \UT a_{\vec k}\invUT &=& \eta_T a_{-\vec k} \\
         \UT b_{\vec k}\invUT &=& \eta_T^* a_{-\vec k} \\
         \UT a_{\vec k}^\dagger\invUT &=& \eta_T a_{-\vec k}^\dagger \\
@@ -200,7 +200,7 @@ dirac方程对应的拉式量密度为
 \end{equation}
 这个定义的实际意思应该解释为
 \begin{equation}
-    \begin{array}{ccc}
+    \begin{array}{lll}
         \UC b_{\vec k}^s\invUC &=& \eta_C d_{\vec k}^s \\
         \UC b_{\vec k}^{s\dagger}\invUC &=& \eta_C d_{\vec k}^s \\
         \UC b_{\vec k}^s\invUC &=& \eta_C d_{\vec k}^s \\
