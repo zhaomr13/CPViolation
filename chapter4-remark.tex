@@ -1,1 +1,157 @@
-remark
+\section{Introduction}
+本章给出了在相对论性量子理论中的\C \P \T 定义。
+包括场的量子化等
+\section{记号}
+在这个注中，我使用与书中不同的记号来写注记
+
+\begin{equation}
+    c = \hbar = 1
+\end{equation}
+
+\begin{equation}
+    \cocovector g \mu \nu = \mathrm{diag}[-1, 1, 1, 1]
+\end{equation}
+
+坐标
+\begin{equation}
+    \bivector x \mu = (t, \vec x)
+\end{equation}
+
+\begin{equation}
+    \covector x \mu = (-t, \vec x)
+\end{equation}
+
+能动量
+\begin{equation}
+    \bivector p \mu = (E, \vec p)
+\end{equation}
+
+\begin{equation}
+    \covector p \mu = (-E, \vec p)
+\end{equation}
+
+\begin{equation}
+    \bivector \partial \mu = \frac \partial {\partial \covector x \mu}
+\end{equation}
+
+\begin{equation}
+    \covector \partial \mu = \frac \partial {\partial \bivector x \mu}
+\end{equation}
+
+\begin{equation}
+    \bivector p \mu = -i \bivector \partial \mu
+\end{equation}
+
+Dirac matrices
+
+\diracgamma 5 = i \diracgamma 0 \diracgamma 1 \diracgamma 2 \diracgamma 3 \diracgamma 4
+
+%\section{自由场}
+\section{Spin-0场的量子化及其\C \P \T}
+\subsection{实标量场量子化}
+为了讨论复标量场，不妨先从实标量场入手
+
+把Klein-Gordon场方程的解展开
+\begin{equation}
+    \phi(t, \vec x) = \int \VolumeUnit k \omega \left[ a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} + a^*(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right]
+    \equiv \int d^3\vec k = \left[a(k)f_k(x) + a^*(k)f_k^*(x)\right]
+\end{equation}
+量子化过程即将上式写成算符
+\begin{equation}
+    \phi(t, \vec x) = \int \VolumeUnit k \omega \left[ a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} + a^\dagger(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right]
+    \equiv \int d^3\vec k = \left[a(k)f_k(x) + a^\dagger(k)f_k^\dagger(x)\right]
+\end{equation}
+同时，正则动量可以求出
+\begin{equation}
+    \pi(t, \vec x) = \dot \phi(t, x) = \int \VolumeUnit k \omega \left[ i\omega_k a(k) e^{i\vec k \cdot \vec x - \i\omega_k t} - i\omega_k a^\dagger(k)e^{-i\vec k \cdot \vec x + i \omega_k t} \right]
+    \equiv \int d^3\vec k = \left[a(k)f_k(x) + a^\dagger(k)f_k^\dagger(x)\right]
+\end{equation}
+
+可以推出
+\begin{equation}
+    a(k) = i \int d^3 \vec x f_k^*\partial_0\phi
+\end{equation}
+\begin{equation}
+    a^\dagger(k) = -i \int d^3 \vec x f_k\partial_0\phi
+\end{equation}
+为了保持洛仑兹协变性
+\begin{equation}
+\ket {\vec k} = \sqrt{(2\pi)^32E_{\vec k)}} a^\dagger(\vec k)\ket{0}
+\end{equation}
+
+\subsection{复标量场量子化}
+讨论量子化的复标量场
+\begin{equation}
+    \phi(t, x) = \frac 1  2 [\phi_1(t, x) + i\phi_2(t, x)]
+\end{equation}
+
+可以量子化为
+\begin{equation}
+    \phi(x) = \int \VolumeUnit k \omega \left[a_+(k)e\right]
+\end{equation}
+
+\subsection{标量场的\C \P \T}
+\subsubsection{\C 变换}
+将复标量场的\C 变换定义为
+\begin{equation}
+    \UC\phi(x)\invUC = \eta_C\phi^\dagger(x)
+\end{equation}
+取复共轭可得
+\begin{equation}
+    \UC a_{vec k}\invUC = \eta_C b_{\vec k}
+\end{equation}
+带入$\phi$的表达式可得,
+\begin{equation}
+    \begin{array}{ccc}
+        \UC a_{\vec k} \invUC &=& \eta_C b_{\vec k} \\
+        \UC a_{\vec k}^\dagger \invUC &=& \eta_C^* b_{\vec k}^\dagger \\
+        \UC b_{\vec k} \invUC &=& \eta_C^* a_{\vec k} \\
+        \UC b_{\vec k}\dagger \invUC &=& \eta_C a_{\vec k}^\dagger \\
+\end{array}
+\end{equation}
+对于实标量场，可得
+\begin{equation}
+    \eta_C = \pm 1
+\end{equation}
+\subsubsection{\P 变换}
+\P 变换表示将坐标变换为
+\begin{equation}
+    \vec x \rightarrow \vec x^\prime = -\vec x
+\end{equation}
+在\P 变换下，复标量场的变化就应该是
+\begin{equation}
+    \UP\phi(t,\vec x)\invUP = \eta_P\phi(t,-\vec x)
+    \end{equation}
+\begin{equation}
+    \UP\phi\dagger(t,\vec x)\invUP = \eta_P^*\phi\dagger(t,-\vec x)
+    \end{equation}
+    同样，对于实标量场
+
+\begin{comment}
+\section{Spin-1场的量子化及其\C \P \T}
+Maxwell 方程组可以写作
+\begin{equation}
+    \covector \partial \mu \bibivector F \mu \v = e \bivector J \nu
+\end{equation}
+其中
+\begin{equation}
+    \bibivector F \mu \nu = \FuvExpand
+    \bibivector F \mu \nu \equiv \bivector \partial \mu \bivector A \nu 
+    - \bivector \partial \nu \bivector A \mu
+\end{equation}
+
+\begin{equation}
+    \L = \EMLagrangianExpand
+\end{equation}
+由于规范问题，电动力学不能直接量子化，采用库仑规范
+\begin{equation}
+    \CoulombGaugeCondition
+\end{equation}
+
+那么，$\vec A$的正则动量就是：
+\begin{equation}
+    \vec \Pi(t, \vec x) = 
+    -\frac \partial {\partial t} \vec A (t, \vec x) - \vec \nabla A_0 = \vec E
+\end{equation}
+
+\end{comment}
